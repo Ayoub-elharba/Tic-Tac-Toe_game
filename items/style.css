@@ -88,3 +88,13 @@ footer a:hover{
     background-size: cover;
     background-position: center;
 }
+
+.swal-warning {
+    background-color: #ff0000;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+
+  }
+.swal-footer{
+    text-align: center;
+  }

@@ -3,24 +3,60 @@ const d = new Date();
 let year = d.getFullYear();
 document.getElementById('years').innerHTML=year;
 
-// AUDIO PLAYER
-var x = document.getElementById("audio1"); 
 
-function playAudio() { 
-  x.play(); 
-} 
-
-function pauseAudio() { 
-  x.pause(); 
-} 
-
+let aud = document.getElementById("audio001");
 // BUTTON RESET
 function reset(){
-    location.reload();
+    
+// ALERT ICON
+  aud.play();
+
+  swal({
+    title: "Are you sure?",
+    text: "You will not be able to recover this!",
+    icon: "warning",
+    buttons: {
+      cancel: {
+        visible: true,
+        text: 'No, cancel!'
+      },
+      confirm: {
+      	visible: true,
+        text: 'Yes, delete it!',
+        className: 'swal-warning',
+         
+      }
+    }
+  }).then(function(isConfirmed) {
+    if (isConfirmed === null) {
+      aud.pause();
+    }
+    else{
+        swal({
+            icon: "success",
+            buttons: false,
+        })
+    setTimeout(function(){location.reload();},1000);
+        
+    }
+  });
 }
 
-// ALERT ICON
-Swal.fire('YOU WELCOME!')
+let aud1 = document.getElementById("audio002");
+
+swal({
+    title:'YOU WELCOME!',
+   Audio:aud1.play(),
+   buttons: {
+    confirm: {
+        visible: true,  
+    }
+  }
+}).then(function(isConfirmed) {
+  if (isConfirmed === true) {
+    aud1.pause();
+  }
+})
 let title=document.querySelector('.title');
 let turn = 'x';
 let squares=[];

@@ -33,7 +33,7 @@ span{
     font-size: 110px;
 }
 .square:hover{
-    background: #ff0000;
+    background: #000000;
     cursor: pointer;
 }
 /* button reset*/
@@ -97,4 +97,86 @@ footer a:hover{
   }
 .swal-footer{
     text-align: center;
+  }
+
+
+/* responsive*/
+@media screen and (max-width: 600px) {
+
+    .game{
+        font-family: 'Chakra Petch', sans-serif;
+        width: 300px;
+        text-align: center;
+        color: rgb(55, 255, 0);
+        margin: auto;
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    
+.title{
+    background-color: #f25;
+    padding: 5px 0;
+    margin: 10px 0 5px 0;
+}
+
+.square{
+    width: 96px;
+    height: 96px;
+    background: rgb(115, 0, 255);
+    float: left;
+    margin: 2px;
+    font-size: 70px;
+}
+/* button reset*/
+button{
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 10px 30px 10px 30px;
+    border: rgb(34, 233, 255) solid 2px;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+
+}
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .game{
+        font-family: 'Chakra Petch', sans-serif;
+        width: 350px;
+        text-align: center;
+        color: rgb(55, 255, 0);
+        margin: auto;
+        font-weight: 200;
+        font-size: 30px;
+    }
+
+    
+.title{
+    background-color: #f25;
+    padding: 5px 0;
+    margin: 10px 0 5px 0;
+}
+
+.square{
+    width: 108px;
+    height: 108px;
+    background: rgb(115, 0, 255);
+    float: left;
+    margin: 4px;
+    font-size: 80px;
+}
+button{
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 10px 30px 10px 30px;
+    border: rgb(34, 233, 255) solid 2px;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 25px;
+
+}
   }
